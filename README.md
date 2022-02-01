@@ -5,4 +5,4 @@ This code is available under GNU General Public Licence, version 3.0.
 
 All the code was processed using Matlab2018a.
 
-Open HSD_to_OPD_main.m for the simulation and follow the comment instructions. 
+Open HSD_to_OPD_main.m for the simulation and follow the commented instructions. 
