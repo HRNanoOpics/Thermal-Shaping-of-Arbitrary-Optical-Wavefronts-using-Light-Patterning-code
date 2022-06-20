@@ -7,6 +7,10 @@
 %
 % We define a 3D coordinate system x,y,z with x,y the plan parallele to the
 % interface layer. z=0 represents the interface between medium 1 and 2.
+% Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, Institute of Photonics and Electronics of the Czech Academy of Sciences, ChaberskÃ¡ 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
+
+% This code is available under GNU General Public Licence, version 3.0.
+
 
 %% Simulation parameters
 
@@ -37,7 +41,7 @@ end
 pix_size=5e-6;                          %Pixel size (m)
 
 %%% Room temperature
-T_0=20;                                 %Temperature (°C)
+T_0=20;                                 %Temperature (Â°C)
 
 %%% Layers parameters
 three_layers=1;                         %If =0, 2 medium, if=1, 3 medium
@@ -86,7 +90,7 @@ Nz=Nx;                                  %Nb pixel along z
 
 s_eff=pi*radius^2;                      %Illuminated surface (m^2)
 Irradiance=Incoming_power/s_eff;        %Irradiance (W/m^2)
-Q_uW_um2=Irradiance*10^-6*eff_abs       %delivered heat(µW/µm^2)
+Q_uW_um2=Irradiance*10^-6*eff_abs       %delivered heat(ÂµW/Âµm^2)
 Q_Ir=Irradiance*eff_abs;                %delivered heat W/m2
 
 
@@ -267,7 +271,7 @@ figure(5)
 x=(round(-Nx/2)+1:round(Nx/2))*pix_size*10^6;
 plot(x,phase(:,round(Ny/2)))
 title 'Phase profile'
-xlabel 'x position (µm)'
+xlabel 'x position (Âµm)'
 ylabel 'Phase-shift (radian)'
 
 
