@@ -1,5 +1,8 @@
 function [green_T]=Green_three_layers(z_source,t_1,t_2,Nx,Nz,pix_size,k1,k2,k3)
    %Green function for three layers z is the orhogonal axis to the layer, r the radial distance from the z axis 
+   % Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" 
+   % from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, 
+   %Institute of Photonics and Electronics of the Czech Academy of Sciences, Chaberská 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
 
    
     Nx_big=round(sqrt(2)*Nx/2);  %Border enhancement with sqrt(2) factor because of the circular reconstuction
