@@ -1,13 +1,16 @@
 %Generation d'un profile HSD en forme de disque de rayon "rayon", Nx,Ny le
-%nombre de pixel selon x,y de l'image, pix_size taille du pixel en mËtre,
+%nombre de pixel selon x,y de l'image, pix_size taille du pixel en m√®tre,
 %Q_Ir chaleur emise par la source (on suppose distribution de source
-%homogËne) en W/m^2
+%homog√®ne) en W/m^2
 %HSD= profil HSD
 % Q_tot= chaleur totale emis par la source en W
+% Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" 
+% from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, 
+%Institute of Photonics and Electronics of the Czech Academy of Sciences, Chabersk√° 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
 
 function [HSD,Q_tot]=HSD_generation(Nx,Ny,radius,pix_size,Q_Ir,shape_option,period,l_vortex,dist_laguerre,maskcustom_path)
 
-    power_per_pix=Q_Ir*pix_size^2;              %Puissance Èmise par pixel
+    power_per_pix=Q_Ir*pix_size^2;              %Puissance √©mise par pixel
     diameter=2*radius;
     
 
