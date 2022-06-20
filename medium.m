@@ -1,5 +1,9 @@
 %for glass refractive index value, cf https://www.schott.com/d/advanced_optics/3794eded-edd2-461d-aec5-0a1d2dc9c523/1.0/schott_tie-19_temperature_coefficient_of_refractive_index_eng.pdf
 % and schott-optical-glass-catalogue-excel-june-2018
+% Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" 
+% from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, 
+%Institute of Photonics and Electronics of the Czech Academy of Sciences, Chabersk√° 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
+
 function [kappa,cp,b_0,beta,n,Diffusivity]=medium(material,T_0)
      
     beta=zeros(1,4);
@@ -50,8 +54,8 @@ function [kappa,cp,b_0,beta,n,Diffusivity]=medium(material,T_0)
         Diffusivity=kappa/(cp*rho);
     elseif strcmp(material,'water')
         
-        %Based on polynomial fit taken from ref ìRefractive index of water and its dependence on wavelength, temperature, and density,î 
-        %Journal of physical and chemical reference data, vol. 14, no. 4, pp. 933ñ945, 1985.
+        %Based on polynomial fit taken from ref ‚ÄúRefractive index of water and its dependence on wavelength, temperature, and density,‚Äù 
+        %Journal of physical and chemical reference data, vol. 14, no. 4, pp. 933‚Äì945, 1985.
         %n(T)=sum(b_j*T^j)
         
         b_0=1.3325;      
