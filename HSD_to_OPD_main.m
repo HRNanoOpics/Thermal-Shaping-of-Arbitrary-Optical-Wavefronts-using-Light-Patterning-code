@@ -7,7 +7,9 @@
 %
 % We define a 3D coordinate system x,y,z with x,y the plan parallele to the
 % interface layer. z=0 represents the interface between medium 1 and 2.
-% Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, Institute of Photonics and Electronics of the Czech Academy of Sciences, Chaberská 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
+% Code used in article entitled "Thermal Shaping of Arbitrary Optical Wavefronts using Light Patterning" 
+% from Hadrien M.L. Robert, Martin Cicala and Marek Piliarik*, 
+%Institute of Photonics and Electronics of the Czech Academy of Sciences, Chaberská 1014/57, 18251 Prague, Czech Republic. *piliarik@ufe.cz  
 
 % This code is available under GNU General Public Licence, version 3.0.
 
